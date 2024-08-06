@@ -1,0 +1,19 @@
+<div class="container d-flex row justify-content-center align-items-center mx-auto mt-5 ">
+  <div class="card col-6 shadow-sm border border-white">
+    <div class="text-center text-white m-4 pt-5">
+
+      <h1 class="p-3 m-3">What is the longest word you can do ?</h1>
+
+      <h2 class="p-3 m-3">Your longest word : <%= @word %></h2>
+
+      <p class="p-3 m-3"><%= @message %></p>
+
+      <div class="d-flex row justify-content-center">
+        <button class="btn btn-warning border-1 rounded-3 form-control text-center">
+          <%= link_to "Try again?", new_path %>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
